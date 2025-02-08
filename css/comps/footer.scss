@@ -1,0 +1,32 @@
+@import 'colors.scss';
+
+.footer {
+    width: 100%;
+    padding-bottom: 25px;
+    margin-top: 75px;
+
+    &__container {
+        padding-top: 1em;
+        border-top: 1px solid #e4e4e4;
+    }
+    &__row { 
+        display: flex; 
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    } 
+    &__item { color: $color-text-light; }
+    &__button {
+        text-decoration: none;
+        color: $color-white;
+        background-color: $color-main;
+        border-radius: 0.75em;
+        padding: 0.5em 2em;
+        transition: 0.3s ease;
+
+        &:hover {
+            background-color: $color-main-hover;
+        }
+    }
+}

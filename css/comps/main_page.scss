@@ -1,0 +1,64 @@
+@import 'colors.scss';
+
+// Main
+.main {
+    margin-top: 100px;
+
+    &__h {
+        color: $color-black;
+        font-size: 32px;
+        padding: 1em 0;
+        font-weight: 600;
+
+    }
+    // &__image {}
+
+}
+
+// Usual
+.usual {
+
+    &__container {
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+        gap: 16px;
+        justify-items: center;
+        padding: 0; 
+    }
+    &__h {
+        color: $color-black;
+        font-size: 32px;
+        padding: 1em 0;
+        font-weight: 600;
+    }
+}
+.card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.05);
+        color: $color-main-hover;
+    }
+
+    &__header {
+        margin: 0.5em 0.5em 1em 0.5em;
+        font-size: 18px;
+        color: $color_main;
+    }
+    &__img {
+        width: 100%; 
+        height: auto;
+        max-height: 150px; 
+        object-fit: cover; 
+    }
+
+}
